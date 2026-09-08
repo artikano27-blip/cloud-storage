@@ -15,7 +15,7 @@ function App() {
 
 
     return (
-        <BrowserRouter basename={import.meta.env.VITE_BASE}>
+        <BrowserRouter basename={import.meta.env.VITE_BASE || "/"}>
             <GlobalProvider>
                 <Routes>
                     <Route element={<BaseLayout/>}>

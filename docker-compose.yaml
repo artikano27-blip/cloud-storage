@@ -53,6 +53,8 @@ services:
   web:
     build: .
     command: gunicorn core.wsgi:application --bind 0.0.0.0:8000 --workers 3
+    env_file:
+      - .env
     expose:
       - "8000"
     restart: unless-stopped
