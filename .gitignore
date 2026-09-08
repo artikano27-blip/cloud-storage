@@ -1,0 +1,24 @@
+# Секреты и окружение
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+.venv/
+
+# Node / Frontend
+node_modules/
+frontend/dist/
+
+# IDE и OS
+.idea/
+.vscode/
+.DS_Store
+
+# Базы данных и медиа
+*.sqlite3
+media/
